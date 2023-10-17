@@ -45,7 +45,7 @@ int main(int argc, char **argv, char **envp) {
   printf("LIST ALL USERS? (y/n, default=y): ");
   char list_all_users = 'y';
   scanf("%c", &list_all_users);
-  if (list_all_users == 'y') {
+  if (list_all_users == 'y' || list_all_users == '\n') {
     list_dir(ALL_USERS_PATH);
   }
   char user[9];
