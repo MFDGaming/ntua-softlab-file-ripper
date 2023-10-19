@@ -51,7 +51,7 @@ int main(int argc, char **argv, char **envp) {
   char user[9];
   user[8] = '\0';
   printf("INSERT USERNAME: ");
-  scanf("%8s", &user);
+  scanf("%8s", user);
   int len = strlen(ALL_USERS_PATH) + strlen(user) + strlen("/programs/");
   char *programs = malloc(len + 1);
   strcpy(programs, ALL_USERS_PATH);
@@ -62,7 +62,7 @@ int main(int argc, char **argv, char **envp) {
   printf("INSERT FILE NAME: ");
   char file[MAXPATHLEN];
   file[MAXPATHLEN-1] = '\0';
-  scanf("%s", &file);
+  scanf("%s", file);
   len += strlen(file);
   char *path = malloc(len + 1);
   path[len] = '\0';
