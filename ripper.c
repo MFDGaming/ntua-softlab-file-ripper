@@ -3,7 +3,7 @@
 // This file is licensed under
 // the GPLv2 license
 
-// I take no responibility
+// I take no responsibility
 // for any malicious use of
 // this file, use it at your
 // own risk
